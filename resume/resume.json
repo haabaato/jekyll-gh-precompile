@@ -1,0 +1,184 @@
+{
+	"name": "Herbert Keith Siojo",
+	"contact": [
+		{ "method": "Email", "value": "hire@herbert-siojo.com", "link": "mailto:hire@herbert-siojo.com" },
+		{ "method": "Telephone", "value": "+1 (650) 898-7352", "link": "tel:+16508987352" }
+	],
+    "education": [
+        { "name": "University of California, Berkeley", "time": { "end": "May 2007" },
+            "desc": "B.S. in Electrical Engineering and Computer Science (Bioelectronics option)"
+        }
+    ],
+    "experience": [
+
+        { "name": "Nokbox", "time": { "start": "February 2013", "end": "Present" }, "title": "Co-Founder", 
+            "location": "Burlingame, California",
+            "projects": [
+            {
+                "name": "Chief Technological Officer",
+                "desc": "Replacing your phone app to allow you to reach out to members of your loose-tie networks and groups. <a href='http://www.nokbox.com'>nokbox.com</a>"
+            }
+            ]
+        },
+        { "name": "QiuQiu", "time": { "start": "September 2012", "end": "January 2013" }, "title": "Co-Founder", 
+            "location": "Beijing, China",
+            "projects": [
+            {
+                "name": "Chief Mobile Architect",
+                "desc": "<a href='http://thenextweb.com/asia/2012/10/30/here-are-the-8-startups-graduating-from-chinaccelerators-third-class/'>Chinaccelerator 2012 class</a>. In two months, created a fully-featured iOS app focused on mobile social matching in China."
+            }
+            ]
+        },
+        { "name": "HoodHot Travel", "time": { "start": "October 2011", "end": "August 2012" }, "title": "CTO", 
+            "location": "San Francisco, California",
+            "projects": [
+            {
+                "name": "Chief Technological Officer",
+                "desc": "Actively updating and maintaining our Taxi Guide and Teleport <a href='http://hoodhottravel.com/products'>iPhone apps</a>.<br>Ported Taxi Guide to <a href='https://play.google.com/store/apps/details?id=com.hoodhot.taxiguideBJ'>Android</a> platform.<br>(Side project)<br>Converted the <a href='http://bit.ly/LLBirthday'>“Little Laura and the Birthday Surprise”</a> into a storybook iOS app, complete with rich imagery, vocals, and original music. Features responsive rewinding/forwarding driven by gestures, voice recording, and sharing."
+            }
+            ]
+        },
+        { "name": "Tigerspike", "time": { "start": "April 2011", "end": "January 2012" }, "title": "iOS Consultant", 
+            "location": "New York, New York",
+            "projects": [
+            {
+                "name": "My Aveda Style app",
+                "desc": "Developed the <a href='http://itunes.apple.com/us/app/my-aveda-style/id472053881?mt=8'>My Aveda Style</a> iPhone app for finding hairstyles and learning how to apply them.  Features Live Chat integration for communicating in real-time with experts, image filters built with ImageMagick for uploading your own hair styles, and a hair advisor quiz with results from product listings pulled from Aveda APIs."
+            }
+            ]
+        },
+        { "name": "JK Design", "time": { "start": "January 2011", "end": "December 2011" }, "title": "iOS and Wordpress Consultant", 
+            "location": "New York, New York",
+            "projects": [
+            {
+                "name": "Portfolio iPad app",
+                "desc": "Developed the company portfolio iPad app using iOS5 with features such as drag-and-drop for creating custom slide decks, OTA database syncing, gesture-driven UI (5-finger tap for menu).<br/>Modularized the engine for easier customization when adopted in the future for other companies’ needs."
+            },
+            {
+                "name": "Wordpress websites",
+                "desc": "Created a series of <a href='http://whitebox.jkdesign.com'>whitebox website templates</a> using Wordpress, which allowed users to create customizable menus, galleries, pages.<br/>Involved both front-end and back-end development.<br/>Revamped a <a href='http://allsaints.jkdesign.com/'>website</a> using Wordpress, also complete with carousels, galleries, map popups, social media links."
+            }
+            ]
+        },
+        { "name": "LBi US", "time": { "start": "July 2010", "end": "December 2010" }, "title": "iOS Developer Consultant", 
+            "location": "New York, New York",
+            "projects": [
+            {
+                "name": "Macy's Magic Fitting Room",
+                "desc": "Developed the iPad interface to a touch-screen mirror featured at Macy’s Herald Square as a <a href='http://articles.cnn.com/2010-10-14/tech/macys.virtual.mirror_1_macys-christopher-enright-magic-mirror?_s=PM:TECH'>magic fitting room</a>, where users would pick clothing from the iPad carousel to see on the mirror, with the ability to move and resize the clothing over their reflection.<br/>Coded part of the gesture recognition and clothing animations of the touch-screen mirror in .NET, which relied on Windows 7’s WPF 4 multi-touch framework."
+            },
+            {
+                "name": "Glenfiddich Alcohol Tasting Events",
+                "desc": "Architected two iPad apps for Glenfiddich’s <a href='http://www.clickz.com/clickz/news/1811461/glenfiddich-serves-ipad-app-dram'>tasting events</a> that relied heavily on network communication between iPads, utilized a netbook with PHP server code for database storage, and routed connections via a Verizon Mifi router for real-time sharing via social media."
+            },
+            {
+                "name": "Digital Magazine Engine",
+                "desc": "Created a digital magazine rendering engine to showcase William Grant's brands. Features thumbnail previews, video content, and OTA updates."
+            }
+
+            ]
+        },
+        { "name": "Trend Creates", "time": { "start": "April 2010", "end": "July 2010" }, "title": "", 
+            "location": "Osaka, Japan",
+            "projects": [
+            {
+                "name": "Kaochen Website",
+                "desc": "Designed Flash/Flex applications for the renewal version of <a href='http://www.tckc.jp'>Kaochen</a>&mdash;a Japanese JibJab clone&mdash;including a movie editor, image editor, chatroom, and a video player with streaming comments.<br/>Modified a jQuery news ticker plugin to fit our specifications."
+            }
+            ]
+        },
+        { "name": "Consulting", "time": { "start": "November 2009", "end": "February 2010" }, "title": "", 
+            "location": "Tokyo, Japan",
+            "projects": [
+            {
+                "name": "Restaurant Management Tool",
+                "desc": "Created a simple Cocoa application in Objective-C for a restaurant’s internal management, targeted to OSX 10.4."
+            },
+            {
+                "name": "iPhone Apps",
+                "desc":	"Developed two iPhone apps (HoodHot's <a href='http://hoodhottravel.com/products/taxi-guides'>BeijingTaxiGuide</a> on App Store). The engine was later used for other apps localized to different cities. Streamlined game development by using the Cocos2D framework. Fetched geocoding coordinates from Google Maps API to store in a SQLite database. Actively utilized SVN and Git versioning control systems."
+            }
+            ]
+        },
+        { "name": "Fujitsu Microelectronics Limited", "time": { "start": "August 2007", "end": "October 2009" }, "title": "Electronic Devices Developer", 
+            "location": "Tokyo, Japan",
+            "projects": [
+            {
+                "name": "SoC development",
+                "desc": "Assembled the logic for Xilinx FPGA on project team’s ARM-based multi-core SoC prototyping platform.<br/>- Implemented NTSC standard at the hardware level and successfully output video data/sync signals to LCD display.<br/>- Analyzed audio data transmitted over I2S audio serial bus interface.<br/>- Processed images with motion JPEG decoder."
+            }
+            ]
+        },
+        { "name": "Personal Projects", 
+            "projects": [
+            {
+                "name": "Flash Chatroom hosted on GAE",
+                "desc": "Launched a Flash chatroom website on Google App Engine (Python backend) with user accounts, localization."
+            },
+            {
+                "name": "Jekyll Blog (abandoned)",
+                "desc": "Started a personal programming blog using Jekyll, a static site generator created in Ruby. Used Haml and Sass to speed up HTML and CSS coding."
+            },
+            {
+                "name": "Wordpress Blog",
+                "desc": "Created this site, a personal programming blog powered by Wordpress."
+            }
+            ]
+        }
+    ],
+    "competencies": [
+        { "category": "Languages", 
+            "value": [
+                "Objective-C",
+                "Java",
+                "Python",
+                "Ruby",
+                "PHP",
+                "Perl",
+                "Actionscript 3",
+                "Javascript",
+                "HTML",
+                "CSS",
+                "Lisp (Scheme)",
+                "C",
+                "Assembly",
+                "Verilog"
+            ]
+        },
+        { "category": "Frameworks & Platforms", 
+            "value": [
+                "iOS",
+                "Android",
+                "Flash/Flex",
+                "Wordpress",
+                "Google App Engine"
+            ]
+        },
+        { "category": "Databases", 
+            "value": [
+                "SQLite",
+                "MySQL",
+                "CouchDB"
+            ]
+        },
+        { "category": "Libraries", 
+            "value": [
+                "Cocos2D (iOS)", 
+                "TouchDB (iOS)", 
+                "jQuery",
+                "BeautifulSoup (Python)"
+            ]
+        },
+        { "category": "Version Control", 
+            "value": [
+                "SVN",
+                "Git"
+            ]
+        }
+    ],
+    "languages": [
+        "English (native)",
+        "Japanese (fluent, passed Level 1 Japanese Language Proficiency Test)",
+        "Tagalog (fluent)"
+    ]
+}
