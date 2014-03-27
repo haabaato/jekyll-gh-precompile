@@ -1,4 +1,4 @@
 haabaato.github.io
 ==================
 
-blog and resume
+résumé and blog

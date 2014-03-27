@@ -1,0 +1,161 @@
+// @import "compass/reset";
+
+@mixin gray-box() {
+    background: none repeat scroll 0 0 #EEEEEE;
+    display: inline-block;
+    margin: 0.4em;
+    padding: 0.2em;
+}
+.clear {
+    clear:both;
+}
+a {
+    text-decoration: underline;
+    color: black;
+    &:visited {
+        color: #000055;
+    }
+}
+a.link {
+    color: blue;
+}
+li ul li {
+    page-break-inside: avoid;
+}
+body {
+    font: 16px Garamond,serif;
+    padding: 0.5em 2em;
+}
+h1, h2, h3 {
+    margin: 0.5em 0;
+    page-break-after: avoid;
+}
+h2, h3 {
+    font-weight: normal;
+}
+h1 {
+    font-size: 1.2em;
+}
+h2 {
+    font-size: 1.1em;
+}
+h3 {
+    font-size: 1em;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+h1 + p, h2 + p, h3 + p {
+    margin-top: 0;
+}
+ul {
+    margin: 0;
+    padding-left: 1em;
+}
+li {
+    list-style: none outside none;
+}
+ul.desc {
+    padding-left: 2em;
+}
+ul.circle {
+    list-style-type: circle;
+}
+.left {
+    float:left;
+    width: 200px;
+}
+.right {
+    float:right;
+    width: 200px;
+}
+.center {
+    margin: 0 auto;
+    width: 200px;
+}
+.resume {
+    margin: 0 auto;
+    max-width: 50em;
+
+    .info {
+        border-bottom: 1px solid #CCCCCC;
+        padding: 1em 0 0 0;
+        text-align: center;
+
+        p {
+            margin: 0.3em;
+        }
+
+        .name {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .contact {
+            width: 100%;
+
+
+            .email {
+                // margin: 0 auto;
+                // width: 200px;
+                // span {
+                    @include gray-box();
+                // }
+            }
+
+            .address {
+                // float: right;
+                text-align: right;
+                // width: 200px;
+                margin-top: 10px;
+
+            }
+        }
+    }
+
+    .experience {
+        .job {
+            margin-bottom: 10px;
+        }
+
+        .location {
+            float: right;
+        }
+
+        .projects {
+            li {
+                margin: 5px 0;
+            }
+            .times {
+                font-size: 0.8em;
+                font-weight: normal;
+                vertical-align: middle;
+            }
+
+            .items {
+                li {
+                    list-style-type: disc;
+                }
+            }
+        }
+    }
+    .competencies ul, .affiliations, .languages {
+        li {
+            @include gray-box();
+        }
+        li.first {
+            background-color: #FFF;
+        }
+    }
+
+    .affiliations li, .conferences li {
+        padding: 0.5em;
+    }
+    .affiliations .location, .conferences .location {
+        color: #444444;
+        font-size: 0.9em;
+    }
+
+}
+
+
+

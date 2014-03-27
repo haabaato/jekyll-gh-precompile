@@ -1,24 +1,21 @@
 ---
-name: "Herbert Keith Siojo"
-contact: [
+"name": "Herbert Keith Siojo"
+"contact": [
     {
-        method: Email,
-        value: hire@herbert-siojo.com,
-        link: "mailto:hire@herbert-siojo.com"
+        "method": Email,
+        "value": hire@herbert-siojo.com,
+        "link": "mailto:hire@herbert-siojo.com"
     }
 ]
-address: "San Francisco, CA 94107"
-education: [
+"address": "San Francisco, CA 94107"
+"education": [
     {
         "name": "University of California, Berkeley",
         "time": { "end": "May 2007" },
         "desc": "B.S. in Electrical Engineering and Computer Science (Bioelectronics option)"
     }
 ]
-objective: "A consulting contract that utilizes my full-stack experience or knowledge of mobile iOS development."
-summary: "I create software with the user in mind, creating applications with an intuitive user interface experience. I understand the importance of creating highly readable and maintainable source code, but shipping comes first in crunch time. Constantly learning new technologies as part of endless self-improvement.
-"
-experience: [
+"experience": [
         { "name": "Nokbox", "time": { "start": "February 2013", "end": "Present" }, "title": "Co-Founder",
             "location": "Burlingame, California",
             "projects": [
@@ -79,6 +76,11 @@ experience: [
             {
                 "name": "Portfolio iPad app",
                 "desc": "Developed the company portfolio iPad app using iOS5 with features such as drag-and-drop for creating custom slide decks, OTA database syncing, custom gesture-driven UI (5-finger tap for menu).<br>Modularized the engine for easier customization in other client companies’ portfolios."
+
+            },
+            {
+                "name": "Wordpress websites",
+                "desc": "Created a series of <a href='http://whitebox.jkdesign.com'>whitebox website templates</a> using Wordpress, which allowed users to create customizable menus, galleries, pages.<br/>Involved both front-end and back-end development.<br/>Revamped a <a href='http://allsaints.jkdesign.com/'>website</a> using Wordpress, also complete with carousels, galleries, map popups, social media links."
             }
             ]
         },
@@ -100,28 +102,75 @@ experience: [
 
             ]
         },
+        { "name": "Trend Creates", "time": { "start": "April 2010", "end": "July 2010" }, "title": "",
+            "location": "Osaka, Japan",
+            "projects": [
+            {
+                "name": "Kaochen Website",
+                "desc": "Designed Flash/Flex applications for the renewal version of <a href='http://www.tckc.jp'>Kaochen</a>&mdash;a Japanese JibJab clone&mdash;including a movie editor, image editor, chatroom, and a video player with streaming comments.<br/>Modified a jQuery news ticker plugin to fit our specifications."
+            }
+            ]
+        },
         { "name": "Consulting", "time": { "start": "November 2009", "end": "February 2010" }, "title": "",
             "location": "Tokyo, Japan",
             "projects": [
+            {
+                "name": "Restaurant Management Tool",
+                "desc": "Created a simple Cocoa application in Objective-C for a restaurant’s internal management, targeted to OSX 10.4."
+            },
             {
                 "name": "iPhone Apps",
                 "desc": "Developed two iPhone apps (HoodHot's <a href='http://hoodhottravel.com/products/taxi-guides'>BeijingTaxiGuide</a> on App Store). The engine was later used for other apps localized to different cities. Fetched geocoding coordinates from Google Maps API to store in a SQLite database. Actively utilized SVN and Git versioning control systems."
             }
             ]
         },
+        {
+          "name": "Fujitsu Microelectronics Limited", "time": { "start": "August 2007", "end": "October 2009" }, "title": "Electronic Devices Developer",
+            "location": "Tokyo, Japan",
+            "projects": [
+              {
+                "name": "SoC development",
+                "desc": "Assembled the logic for Xilinx FPGA on project team’s ARM-based multi-core SoC prototyping platform.<br/>- Implemented NTSC standard at the hardware level and successfully output video data/sync signals to LCD display.<br/>- Analyzed audio data transmitted over I2S audio serial bus interface.<br/>- Processed images with motion JPEG decoder."
+              }
+            ]
+        },
+        {
+          "name" : "Alpha Golf Inc.", "time" : { "start": "February 2006", "end": "July 2007" },
+          "title" : "Electrical Engineering Intern",
+          "location" : "Berkeley, California",
+          "projects" : [
+            {
+              "name" : "Brushed Motor Servo Control",
+              "desc" : "• Developed servo control algorithms (PID control, trapezoidal velocity profile) in C and assembly for brush motors, primarily using embedded system tools and boards.<br/>• Designed, assembled, and debugged a prototype PC board to test position control on motors.  Used Altium Designer for schematic design and board layout.  Ordered parts for PC board from various distributors (Digikey, Mouser, etc) and manually loaded the components.<br/>• Constructed a LabVIEW stand-alone application for interfacing with a 24-bit A/D converter.  Tested the precision of the A/D converter in a surface EMG application."
+            },
+            {
+              "name" : "Peltier Thermoelectric Cooler",
+              "desc" : "• Regulated the temperature of thermoelectric coolers with the PID control algorithm, for use in a thermal camera."
+            }
+          ]
+        },
         { "name": "Personal Projects",
             "projects": [
             {
                 "name": "Jekyll blog (2013)",
                 "desc": "Created my personal website, using Jekyll and hosted on Github, to display my resume and portfolio."
+            },
+            {
+                "name": "Wordpress blog (2011)",
+                "desc": "Created personal site with custom themes, plugins, galleries."
+            },
+            {
+                "name": "Jekyll blog (2010)",
+                "desc": "Started a personal programming blog using Jekyll. Markdown and SASS to speed up HTML and CSS coding."
+            },
+            {
+                "name": "Flash Chatroom hosted on GAE (2010)",
+                "desc": "Launched a Flash chatroom website on Google App Engine (Python backend) with user accounts, localization."
             }
             ]
-        },
-        {
-            "name": "For my complete work history, see <a class='link' href='/cv'>Curriculum Vitae</a>."
         }
   ]
-competencies: [
+"competencies": [
     { "category": "Mobile Platforms",
         "value": [
             "iOS [5 years]",
@@ -183,25 +232,31 @@ competencies: [
                 ]
             }
         ]
+    },
+    { "category": "Version Control",
+        "value": [
+            "Git (Github, Bitbucket)",
+            "SVN"
+        ]
     }
 ]
-languages: [
-    English (native),
+"languages": [
+    "English (native)",
     "Japanese (fluent, passed Level 1 Japanese Language Proficiency Test)",
-    Tagalog (fluent),
-    Mandarin (intermediate),
-    Spanish (intermediate)
+    "Tagalog (fluent)",
+    "Mandarin (intermediate)",
+    "Spanish (intermediate)"
 ]
 conferences: [
-    NSMeetup (San Francisco iPhone/iOS Developers) - Regular attendee,
-    The San Francisco Django Meetup Group - Regular attendee
+    "NSMeetup (San Francisco iPhone/iOS Developers) - Regular attendee",
+    "The San Francisco Django Meetup Group - Regular attendee"
 ]
 ---
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Résumé</title>
+  <title>Curriculum Vitae</title>
   <!-- <link href="style.css" rel="stylesheet"> -->
   <link href="/css/resume.css" rel="stylesheet">
 
@@ -224,8 +279,6 @@ conferences: [
           <div class="clear"></div>
       </div>
     </div> <!-- #info -->
-      <h1>Objective</h1>
-      <p class="objective">{{ page.objective }}</p>
       <h1>Experience</h1>
       <ul class="experience">
       {% for experience in page.experience %}
