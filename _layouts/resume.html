@@ -34,29 +34,37 @@
       <ul class="experience">
       {% for experience in page.experience %}
         <li class="job">
-          <h2>
+          {% if experience.title %}
+            <h2 class="title">{{ experience.title }}</h2>
+          {% endif %}
+          <h4>
             {{ experience.name }}
             {% if experience.time %}
-              <span class="times"> ({{ experience.time.start }}&mdash;{{ experience.time.end }})</span>
+              <span class="times"> ({{ experience.time.start }} &mdash; {{ experience.time.end }})</span>
             {% endif %}
             <span class="location">{% if experience.location %} {{ experience.location }} {% endif %}</span>
-          </h2>
-          <ul class="projects">
-          {% for project in experience.projects %}
-            <li>
-              <h3>{{ project.name }}</h3>
-              {% if project.desc %}
-                <div class="desc">{{ project.desc }}</div>
-              {% endif %}
-              {% if project.items %}
-                  <ul class="items">
-                  {% for item in project.items %}
-                    <li>{{ item }}</li>
-                  {% endfor %}
-                  </ul>
-              {% endif %}
-            </li>
-          {% endfor %}
+          </h3>
+
+          {% if experience.projects %}
+            <ul class="projects">
+            {% for project in experience.projects %}
+              <li>
+                {% if project.name %}
+                  <h3>{{ project.name }}</h3>
+                {% endif %}
+                {% if project.desc %}
+                  <div class="desc">{{ project.desc | markdownify }}</div>
+                {% endif %}
+                {% if project.items %}
+                    <ul class="items">
+                    {% for item in project.items %}
+                      <li>{{ item | markdownify }}</li>
+                    {% endfor %}
+                    </ul>
+                {% endif %}
+              </li>
+            {% endfor %}
+          {% endif %}
           </ul>
         </li>
       {% endfor %}
@@ -66,7 +74,7 @@
       <ul class="education">
           {% for education in page.education %}
           <li>
-              <p>{{ education.name }}<span class="times"> ({{ education.time.end }})</span> &mdash; <span class="desc">{{ education.desc }}</span></p>
+              <p>{{ education.name }}<span class="times"> ({{ education.time.end }}) </span>&mdash;<span class="desc"> {{ education.desc }}</span></p>
           </li>
           {% endfor %}
       </ul>
