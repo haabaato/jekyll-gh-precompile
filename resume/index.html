@@ -1,4 +1,5 @@
 ---
+layout: resume
 name: "Herbert Keith Siojo"
 contact: [
     {
@@ -10,9 +11,9 @@ contact: [
 address: "San Francisco, CA 94107"
 education: [
     {
-        "name": "University of California, Berkeley",
-        "time": { "end": "May 2007" },
-        "desc": "B.S. in Electrical Engineering and Computer Science (Bioelectronics option)"
+        name: "University of California, Berkeley",
+        time: { end: "May 2007" },
+        desc: "B.S. in Electrical Engineering and Computer Science (Bioelectronics)"
     }
 ]
 objective: "A consulting contract that utilizes my full-stack experience or knowledge of mobile iOS development."
@@ -113,7 +114,7 @@ experience: [
             "projects": [
             {
                 "name": "Jekyll blog (2013)",
-                "desc": "Created my personal website, using Jekyll and hosted on Github, to display my resume and portfolio."
+                "desc": "Created my personal website, using Jekyll and hosted on Github, to display my résumé and portfolio."
             }
             ]
         },
@@ -122,46 +123,47 @@ experience: [
         }
   ]
 competencies: [
-    { "category": "Mobile Platforms",
-        "value": [
+    { category: "Mobile Platforms",
+        value: [
             "iOS [5 years]",
-            "Android",
-            "Sencha Touch"
+            Android,
+            Sencha Touch
         ]
     },
-    { "category": "Web Frameworks",
-        "value": [
-            "Django",
-            "Wordpress",
-            "Jekyll",
-            "Flash/Flex"
+    { category: Web Frameworks,
+        value: [
+            Django,
+            Wordpress,
+            Jekyll,
+            Flash/Flex
         ]
     },
-    { "category": "PaaS",
-        "value": [
-            "Amazon Web Services",
-            "DigitalOcean",
-            "Google App Engine"
+    { category: Servers,
+        value: [
+            Apache,
+            Nginx
         ]
     },
-    { "category": "Servers",
-        "value": [
-            "Apache",
-            "Nginx"
+    { category: PaaS,
+        value: [
+            Amazon Web Services,
+            DigitalOcean,
+            Google App Engine
         ]
     },
-    { "category": "Databases",
-        "value": [
-            "PostgreSQL",
-            "SQLite",
-            "MySQL",
-            "CouchDB"
+
+    { category: Databases,
+        value: [
+            PostgreSQL,
+            SQLite,
+            MySQL,
+            CouchDB
         ]
     },
-    { "category": "Languages (Programming)",
-        "items": [
-            { "name": "Proficient:",
-                "values": [
+    { category: Languages (Programming),
+        items: [
+            { name: "Proficient:",
+                values: [
                     "Objective-C [5]",
                     "Python [2]",
                     "Java [1]",
@@ -170,8 +172,8 @@ competencies: [
                     "CSS2/3 [2]"
                 ]
             },
-            { "name": "Familiar:",
-                "values": [
+            { name: "Familiar:",
+                values: [
                     ".NET (C#)",
                     "Ruby",
                     "Lisp (Scheme) [1]",
@@ -197,117 +199,3 @@ conferences: [
     The San Francisco Django Meetup Group - Regular attendee
 ]
 ---
-<!DOCTYPE HTML>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Résumé</title>
-  <!-- <link href="style.css" rel="stylesheet"> -->
-  <link href="/css/resume.css" rel="stylesheet">
-
-  <script type="text/javascript" async src='/javascripts/main.js'></script>
-</head>
-<body>
-  <div class="resume">
-
-    <div class="info">
-      <p class="name">{{ page.name }}</p>
-
-      <div class="contact">
-          <span class="left">&nbsp;</span>
-          {% if page.address %}
-            <span class="address right">{{ page.address }}</span>
-          {% endif %}
-          {% for contact in page.contact %}
-            <span class="email center">{{ contact.method }}: <a href="{{ contact.link }}">{{ contact.value }}</a></span>
-          {% endfor %}
-          <div class="clear"></div>
-      </div>
-    </div> <!-- #info -->
-      <h1>Objective</h1>
-      <p class="objective">{{ page.objective }}</p>
-      <h1>Experience</h1>
-      <ul class="experience">
-      {% for experience in page.experience %}
-        <li class="job">
-          <h2>
-            {{ experience.name }}
-            {% if experience.time %}
-              <span class="times"> ({{ experience.time.start }}&mdash;{{ experience.time.end }})</span>
-            {% endif %}
-            <span class="location">{% if experience.location %} {{ experience.location }} {% endif %}</span>
-          </h2>
-          <ul class="projects">
-          {% for project in experience.projects %}
-            <li>
-              <h3>{{ project.name }}</h3>
-              {% if project.desc %}
-                <div class="desc">{{ project.desc }}</div>
-              {% endif %}
-              {% if project.items %}
-                  <ul class="items">
-                  {% for item in project.items %}
-                    <li>{{ item }}</li>
-                  {% endfor %}
-                  </ul>
-              {% endif %}
-            </li>
-          {% endfor %}
-          </ul>
-        </li>
-      {% endfor %}
-      </ul> <!-- #experience -->
-
-      <h1>Education</h1>
-      <ul class="education">
-          {% for education in page.education %}
-          <li>
-              <h2>{{ education.name }}<span class="times"> ({{ education.time.end }})</span></h2>
-              <ul class="desc">{{ education.desc }}</ul>
-          </li>
-          {% endfor %}
-      </ul>
-
-      <h1>Competencies</h1>
-      <ul class="competencies">
-      {% for competency in page.competencies %}
-        <li>
-          <h2>{{ competency.category }}</h2>
-          {% if competency.items %}
-            {% for item in competency.items %}
-              <ul>
-                <li class="first">{{ item.name }}</li>
-                {% for value in item.values %}
-                    <li>{{ value }}</li>
-                {% endfor %}
-              </ul>
-            {% endfor %}
-          {% else %}
-              <ul>
-              {% for value in competency.value %}
-                <li>{{ value }}</li>
-              {% endfor %}
-              </ul>
-          {% endif %}
-        </li>
-      {% endfor %}
-      </ul>
-
-      <h1>Conferences</h1>
-      <ul class="conferences">
-          {% for conference in page.conferences %}
-          <li>
-              {{ conference }}
-          </li>
-          {% endfor %}
-      </ul>
-
-      <h1>Languages</h1>
-      <ul class="languages">
-          {% for language in page.languages %}
-          <li>{{ language }}</li>
-          {% endfor %}
-      </ul>
-
-  </div> <!-- #resume -->
-</body>

@@ -1,0 +1,117 @@
+---
+---
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Herbert Siojo's Résumé</title>
+  <!-- <link href="style.css" rel="stylesheet"> -->
+  <link href="/css/resume.css" rel="stylesheet" type="text/css">
+  <link href="/css/print.css" rel="stylesheet" type="text/css" media="print" />
+
+  <script type="text/javascript" async src='/javascripts/main.js'></script>
+</head>
+<body>
+  <div class="resume">
+
+    <div class="info">
+      <p class="name">{{ page.name }}</p>
+
+      <div class="contact">
+          <span class="left">&nbsp;</span>
+          {% if page.address %}
+            <span class="address right">{{ page.address }}</span>
+          {% endif %}
+          {% for contact in page.contact %}
+            <span class="email center">{{ contact.method }}: <a href="{{ contact.link }}">{{ contact.value }}</a></span>
+          {% endfor %}
+          <div class="clear"></div>
+      </div>
+    </div> <!-- #info -->
+      <h1>Objective</h1>
+      <p class="objective">{{ page.objective }}</p>
+      <h1>Experience</h1>
+      <ul class="experience">
+      {% for experience in page.experience %}
+        <li class="job">
+          <h2>
+            {{ experience.name }}
+            {% if experience.time %}
+              <span class="times"> ({{ experience.time.start }}&mdash;{{ experience.time.end }})</span>
+            {% endif %}
+            <span class="location">{% if experience.location %} {{ experience.location }} {% endif %}</span>
+          </h2>
+          <ul class="projects">
+          {% for project in experience.projects %}
+            <li>
+              <h3>{{ project.name }}</h3>
+              {% if project.desc %}
+                <div class="desc">{{ project.desc }}</div>
+              {% endif %}
+              {% if project.items %}
+                  <ul class="items">
+                  {% for item in project.items %}
+                    <li>{{ item }}</li>
+                  {% endfor %}
+                  </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+          </ul>
+        </li>
+      {% endfor %}
+      </ul> <!-- #experience -->
+
+      <h1>Education</h1>
+      <ul class="education">
+          {% for education in page.education %}
+          <li>
+              <p>{{ education.name }}<span class="times"> ({{ education.time.end }})</span> &mdash; <span class="desc">{{ education.desc }}</span></p>
+          </li>
+          {% endfor %}
+      </ul>
+
+      <h1>Competencies</h1>
+      <ul class="competencies">
+      {% for competency in page.competencies %}
+        <li class="category">
+          <h2>{{ competency.category }}</h2>
+          {% if competency.items %}
+            {% for item in competency.items %}
+              <ul>
+                <li class="first">{{ item.name }}</li>
+                {% for value in item.values %}
+                    <li>{{ value }}</li>
+                {% endfor %}
+              </ul>
+            {% endfor %}
+          {% else %}
+              <ul>
+              {% for value in competency.value %}
+                <li>{{ value }}</li>
+              {% endfor %}
+              </ul>
+          {% endif %}
+        </li>
+      {% endfor %}
+      </ul>
+      <div class="clear"></div>
+
+      <h1>Conferences</h1>
+      <ul class="conferences">
+          {% for conference in page.conferences %}
+          <li>
+              {{ conference }}
+          </li>
+          {% endfor %}
+      </ul>
+
+      <h1>Languages</h1>
+      <ul class="languages">
+          {% for language in page.languages %}
+          <li>{{ language }}</li>
+          {% endfor %}
+      </ul>
+
+  </div> <!-- #resume -->
+</body>

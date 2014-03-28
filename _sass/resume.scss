@@ -3,7 +3,9 @@
 @mixin gray-box() {
     background: none repeat scroll 0 0 #EEEEEE;
     display: inline-block;
-    margin: 0.4em;
+    // margin: 0.4em;
+    margin-right: 0.2em;
+    margin-bottom: 0.4em;
     padding: 0.2em;
 }
 .clear {
@@ -54,9 +56,9 @@ ul {
 li {
     list-style: none outside none;
 }
-ul.desc {
-    padding-left: 2em;
-}
+// ul.desc {
+    // padding-left: 2em;
+// }
 ul.circle {
     list-style-type: circle;
 }
@@ -92,7 +94,6 @@ ul.circle {
 
         .contact {
             width: 100%;
-
 
             .email {
                 // margin: 0 auto;
@@ -138,6 +139,18 @@ ul.circle {
             }
         }
     }
+    .competencies {
+        ul {
+            padding-left: 0;
+        }
+        li.category {
+            float: left;
+            padding-right: 10px;
+            margin-right: 10px;
+            // border-right: 1px solid #CCCCCC;
+        }
+    }
+
     .competencies ul, .affiliations, .languages {
         li {
             @include gray-box();
