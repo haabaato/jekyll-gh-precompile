@@ -394,6 +394,7 @@ footer .footer-below {
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
+    z-index: 1050; /* added by H.S. */
 }
 
 .portfolio-modal .modal-content h2 {
