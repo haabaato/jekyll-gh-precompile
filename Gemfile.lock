@@ -115,4 +115,4 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll (~> 2.0)
+  jekyll
